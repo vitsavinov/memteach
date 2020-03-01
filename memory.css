@@ -1,0 +1,87 @@
+
+body {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: Indigo;
+}
+
+a {
+  font-weight: bold;
+  color: Indigo;
+}
+
+table {
+  width: 624px;
+  height: 624px;
+  border: 2px solid MediumPurple;
+  border-radius: 10px;
+}
+
+td {
+  position: relative;
+  width: 104px;
+  height: 104px;
+}
+
+img {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: 2px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+img:hover {
+  border: 2px solid crimson;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+}
+
+.view {
+  width: 606px;
+  margin: 0 auto;
+}
+
+.counter {
+  font-weight: bold;
+  color: Indigo;
+}
+
+
+.footer {
+  width: 606px;
+  padding-top:16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+
+.hide {
+  display: none;
+}

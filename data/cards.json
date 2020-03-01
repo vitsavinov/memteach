@@ -1,0 +1,74 @@
+[
+    {
+        "id": "arch-1", 
+        "imagePath": "img/arch-1.jpg"
+    }, 
+    {
+        "id": "arch-2", 
+        "imagePath": "img/arch-2.jpg" 
+    }, 
+    {
+        "id": "arch-3", 
+        "imagePath": "img/arch-3.jpg" 
+    }, 
+    {
+        "id": "arch-4", 
+        "imagePath": "img/arch-4.jpg" 
+    }, 
+    {
+        "id": "arch-5", 
+        "imagePath": "img/arch-5.jpg" 
+    }, 
+    {
+        "id": "arch-6", 
+        "imagePath": "img/arch-6.jpg" 
+    }, 
+    {
+        "id": "arch-7", 
+        "imagePath": "img/arch-7.jpg" 
+    }, 
+    {
+        "id": "arch-8", 
+        "imagePath": "img/arch-8.jpg" 
+    }, 
+    {
+        "id": "arch-9", 
+        "imagePath": "img/arch-9.jpg" 
+    }, 
+    {
+        "id": "arch-10", 
+        "imagePath": "img/arch-10.jpg" 
+    }, 
+    {
+        "id": "arch-11", 
+        "imagePath": "img/arch-11.jpg" 
+    }, 
+    {
+        "id": "arch-12", 
+        "imagePath": "img/arch-12.jpg" 
+    }, 
+    {
+        "id": "arch-13", 
+        "imagePath": "img/arch-13.jpg" 
+    }, 
+    {
+        "id": "arch-14", 
+        "imagePath": "img/arch-14.jpg" 
+    }, 
+    {
+        "id": "arch-15", 
+        "imagePath": "img/arch-15.jpg" 
+    }, 
+    {
+        "id": "arch-16", 
+        "imagePath": "img/arch-16.jpg" 
+    }, 
+    {
+        "id": "arch-17", 
+        "imagePath": "img/arch-17.jpg" 
+    }, 
+    {
+        "id": "arch-18", 
+        "imagePath": "img/arch-18.jpg" 
+    }
+]

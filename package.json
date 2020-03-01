@@ -1,0 +1,21 @@
+{
+  "name": "memteach",
+  "version": "1.0.0",
+  "description": "Yet another memory-card game",
+  "main": "server.js",
+  "dependencies": {
+    "debug": "~0.7.4",
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "author": "Vitalii Savinov",
+  "license": "ISC"
+}
