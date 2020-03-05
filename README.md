@@ -5,17 +5,17 @@ Author     : Vitalii Savinov
 License    : ISC (see LICENSE.md)  
 
 
-OBJECT OF THE GAME
+PURPOSE OF THE GAME
 ==================
 The object of the game is to remove all the memory-cards from the table with the minimal amount of clicks.
 
 PLAYING MEMTEACH
 ================
-The player clicks a card on a table and turns it over. Then clicks another card and turns it over. 
-If these two cards are a matching pair they are removed from the table.
+The player clicks on a card, which lays on a table, and turns it over. He then clicks on another card and turns it over, too. 
+If these two cards match they are removed from the table.
 
-If these cards are not a match the player clicks a third card on a table, both previous cards are turned back over and the player searches the next matching card.
-When all the cards are removed from the table click-counter is stopped.
+If these cards do not match the player clicks on a third card from a table, while both previous cards are turned back over and the player starts looking for the next matching card.
+When all the cards have been removed from the table the click-counter stops.
 
 
 
@@ -39,7 +39,7 @@ INSTALLATION
 First of all you need to have a Git client installed on your computer.
 
 1. Clone Memteach from the Github by running a command: git clone https://github.com/vitsavinov/memteach
-2. To generate a bundle "memory-bundle.js" run a command: npm run build
+2. To generate a bundle "memory-bundle.js", run a command: npm run build
    You will see a new file "memory-bundle.js" in the directory
  
 
@@ -49,4 +49,4 @@ HOW TO START ON A LOCAL HOST
    You will see a message "Server is listening on port 8000"
 2. Run your browser and type in the addres field: localhost:8000
 
-Find the matching pairs of the cards and cleat the table!
+Find the matching pairs of the cards and clean the table!
