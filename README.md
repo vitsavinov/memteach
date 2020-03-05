@@ -1,8 +1,8 @@
-Name       : Memteach
-Version    : 1.0.0
-Description: Yet another memory-card game
-Author     : Vitalii Savinov
-License    : ISC (see LICENSE.md)
+Name       : Memteach  
+Version    : 1.0.0  
+Description: Yet another memory-card game  
+Author     : Vitalii Savinov  
+License    : ISC (see LICENSE.md)  
 
 
 OBJECT OF THE GAME
