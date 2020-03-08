@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8000;
+const port = 80;
 
 var path         = require('path');
 var favicon      = require('serve-favicon');
