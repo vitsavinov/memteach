@@ -22,6 +22,15 @@ automatic_scaling:
   max_pending_latency: 1500ms
   max_concurrent_requests: 80
 handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+- url: /(.css)
+  static_files: memory.css
+  upload: memory.css
+- url: /img/(.jpg)
+  static_files: img/\1
+  upload: /(.jpg)
 - url: /.*
   script: auto
 # [END memteach_app_yaml]
