@@ -8,13 +8,17 @@
     "express": ">=4.5.0",
     "static-favicon": "~1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitsavinov/memteach"
+  },
   "devDependencies": {
     "webpack": "^3.12.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack --watch"
+    "start": "node server.js"
   },
   "author": "Vitalii Savinov",
   "license": "ISC"
