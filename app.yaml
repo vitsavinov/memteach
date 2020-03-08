@@ -23,5 +23,5 @@ automatic_scaling:
   max_concurrent_requests: 80
 handlers:
 - url: /.*
-  script: server.js
+  script: auto
 # [END memteach_app_yaml]
