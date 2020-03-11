@@ -13,9 +13,10 @@
 
 # [START memteach_app_yaml]
 runtime: nodejs10
-instance_class: F1
+instance_class: F2
 automatic_scaling:
-  max_instances: 2
+  min_instances: 0
+  max_instances: 3
   min_idle_instances: 0
   max_idle_instances: 1
   min_pending_latency: 1500ms
@@ -25,12 +26,16 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
-- url: /(.css)
+- url: /memory.css
   static_files: memory.css
   upload: memory.css
-- url: /img/(.jpg)
+- url: /memory-bundle.js
+  static_files: memory-bundle.js
+  upload: memory-bundle.js
+- url: /data/(.*)
+  static_files: data/\1
+  upload: data/(.*)
+- url: /img/(.*\.(gif|png|jpg))$
   static_files: img/\1
-  upload: /(.jpg)
-- url: /.*
-  script: auto
+  upload: img/.*\.(gif|png|jpg)$
 # [END memteach_app_yaml]

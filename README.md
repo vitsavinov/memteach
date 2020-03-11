@@ -7,7 +7,7 @@ License    : ISC (see LICENSE.md)
 
 PURPOSE OF THE GAME
 ==================
-The object of the game is to remove all the memory-cards from the table with the minimal amount of clicks.
+The purpose of the game is to remove all the memory-cards from the table with the minimal amount of clicks.
 
 PLAYING MEMTEACH
 ================
@@ -47,6 +47,17 @@ HOW TO START ON A LOCAL HOST
 ============================
 1. Start a game server by running: sudo node server.js
    You will see a message "Server is listening on port 8000"
-2. Run your browser and type in the addres field: localhost:8000
+2. Run your browser and type in the address field: localhost:8000
 
-Find the matching pairs of the cards and clean the table!
+
+HOW TO START ON THE GOOGLE CLOUD APP ENGINE
+===========================================
+First of all you need to have an active account on the Google Cloud Platform (https://cloud.google.com).
+Also you need to have the Cloud SDK (https://cloud.google.com/sdk) installed on your localhost.
+
+1. Deploy the game server to the Google App Engine by running: gcloud app deploy
+   You will see a message "Server is listening on port 80"
+2. Start your browser with address which is assigned to your server app by GAE using command: gcloud app browse
+
+
+Enjoy!
