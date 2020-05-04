@@ -1,4 +1,3 @@
-
 body {
   width: 100%;
 }
@@ -49,7 +48,7 @@ img:hover {
 }
 
 .view {
-  width: 606px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -61,14 +60,67 @@ img:hover {
 
 .auth {
   display: inline-block;
+  float: right;
+}
+
+.auth-login {
+  width: 650px;
+  display: none;
+}
+
+.login {
+  display: inline-block;
   font-weight: bold;
+  padding: 0px 6px 0px 6px;
+  color: White;
+  background-color: DarkSlateBlue;
+  border: 1px solid DarkSlateBlue;
+  border-radius: 6px;
+}
+
+.register {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
+  color: White;
+  background-color: DarkSlateBlue;
+  border: 1px solid DarkSlateBlue;
+  border-radius: 6px;
+}
+
+.form-control {
+  display: inline-block;
+  padding: 0px 6px 0px 6px;
+  color: Indigo;
+  border: none;
+}
+
+p.form-control {
+  display: inline-block;
+  border: none;
   color: Indigo;
 }
 
-a.auth {
-  font-weight: bold;
-  text-decoration: underline;
+input.form-control {
+  display: inline-block;
+  padding: 0px 0px 0px 4px;
+  margin: 0px 16px 0px 0px;
   color: Indigo;
+  width: 256px;
+  border: 1px solid DarkSlateBlue;
+  border-radius: 6px;
+}
+
+button.form-control {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
+  margin: 0px 0px 0px 16px;
+  width: 70px;
+  color: White;
+  background-color: DarkSlateBlue;
+  border: 1px solid DarkSlateBlue;
+  border-radius: 6px;
 }
 
 .footer {
@@ -100,7 +152,6 @@ a.footer {
   left: 0;
   z-index: 50;
 }
-
 
 .hide {
   display: none;

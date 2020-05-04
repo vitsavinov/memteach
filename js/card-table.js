@@ -66,14 +66,14 @@ export default class CardTable extends Component {
       let curIndex = 0;
       let curKey = "";
 
-      // place this card in the randome cell
+      // place this card in the random cell
       curIndex = this._getRandomInRange(0, curLen-1);
       curKey = tmpTable[curIndex];
       table[curKey] = curCard;
       tmpTable.splice(curIndex, 1); // delete this cell from the list
       curLen = tmpTable.length;
 
-      // place the "twin" of this card in the another randome cell
+      // place the "twin" of this card in the another random cell
       curIndex = this._getRandomInRange(0, curLen-1);
       curKey = tmpTable[curIndex];
       table[curKey] = curCard;
