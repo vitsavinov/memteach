@@ -54,10 +54,22 @@ img:hover {
 }
 
 .counter {
+  display: inline-block;
   font-weight: bold;
   color: Indigo;
 }
 
+.auth {
+  display: inline-block;
+  font-weight: bold;
+  color: Indigo;
+}
+
+a.auth {
+  font-weight: bold;
+  text-decoration: underline;
+  color: Indigo;
+}
 
 .footer {
   width: 606px;
