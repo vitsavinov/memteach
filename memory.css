@@ -68,6 +68,12 @@ img:hover {
   display: none;
 }
 
+.auth-register {
+  width: 650px;
+  height: 80px;
+  display: none;
+}
+
 .login {
   display: inline-block;
   font-weight: bold;
@@ -104,9 +110,9 @@ p.form-control {
 input.form-control {
   display: inline-block;
   padding: 0px 0px 0px 4px;
-  margin: 0px 16px 0px 0px;
+  margin: 4px 10px 0px 0px;
   color: Indigo;
-  width: 256px;
+  width: 200px;
   border: 1px solid DarkSlateBlue;
   border-radius: 6px;
 }
@@ -115,7 +121,7 @@ button.form-control {
   display: inline-block;
   font-weight: bold;
   padding: 0px 6px 0px 6px;
-  margin: 0px 0px 0px 16px;
+  margin: 4px 0px 0px 0px;
   width: 70px;
   color: White;
   background-color: DarkSlateBlue;

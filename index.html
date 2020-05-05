@@ -19,6 +19,18 @@
         document.querySelector('[data-component="counter"]').style.display='inline-block';
         document.querySelector('[data-component="auth-buttons"]').style.display='inline-block';
       }
+
+      function openRegisterForm() {
+        document.querySelector('[data-component="counter"]').style.display='none';
+        document.querySelector('[data-component="auth-buttons"]').style.display='none';
+        document.querySelector('[data-component="register-form"]').style.display='inline-block';
+      }
+
+      function closeRegisterForm() {
+        document.querySelector('[data-component="register-form"]').style.display='none';
+        document.querySelector('[data-component="counter"]').style.display='inline-block';
+        document.querySelector('[data-component="auth-buttons"]').style.display='inline-block';
+      }
   </script>
 
 
@@ -30,14 +42,25 @@
     <div class="view" data-component="card-table">
     <p class="counter" data-component="counter">Clicks: </p>
     <div class="auth" data-component="auth-buttons">
-        <p class="login" data-component="login"><button type='button' class='login' onclick="openLoginForm()">Login</button></p>
-        <p class="register" data-component="register"><button type='button' class='register'>Register</button></p>
+        <p class="login" data-component="login"><button type="button" class="login" onclick="openLoginForm()">Login</button></p>
+        <p class="register" data-component="register"><button type="button" class="register" onclick="openRegisterForm()">Register</button></p>
     </div>
+
     <div class="auth-login" data-component="login-form">
         <p class="form-control" data-component="login-fields">
-            <input type="text" class="form-control" placeholder="nickname">
-            <input type="text" class="form-control" placeholder="password">
+            <input id="login-name" type="text" class="form-control" required name="nickname" placeholder="nickname">
+            <input id="login-password" type="text" class="form-control" required name="password" placeholder="password">
             <button type="button" class="form-control" onclick="closeLoginForm()">Enter</button>
+        </p>
+    </div>
+    <div class="auth-register" data-component="register-form">
+        <p class="form-control" data-component="register-fields">
+            <input id="register-name" type="text" class="form-control" required name="nickname" placeholder="nickname">
+            <input id="register-email" type="text" class="form-control" required name="e-mail" placeholder="e-mail">
+            <input id="register-country" type="text" class="form-control" required name="country" placeholder="select country">
+            <input id="register-password1" type="text" class="form-control" required name="password1" placeholder="password">
+            <input id="register-password2" type="text" class="form-control" required name="password2" placeholder="repeat password">
+            <button type="button" class="form-control" onclick="closeRegisterForm()">Enter</button>
         </p>
     </div>
     <table>
