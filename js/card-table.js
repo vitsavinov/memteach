@@ -29,7 +29,7 @@ export default class CardTable extends Component {
 
               this._shuffle(this._layout, this._cardslist);
               this._fillTable();
-              this._bindAuthButtons();
+              // this._bindAuthButtons();
             },
             (error) => { console.log(error); }
         );
