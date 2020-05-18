@@ -1,9 +1,8 @@
 const express = require('express');
 const port = 80;
 
-var path = require('path');
-
 const app = express();
+app.use(express.static(__dirname));
 
 app.get('/', function(req, res) {
     res.sendfile(__dirname + '/index.html');    
