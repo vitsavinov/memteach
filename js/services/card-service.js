@@ -82,6 +82,7 @@ export default class CardService extends Component {
     //===================================================================
     // handle click on Login button
     openLoginForm(curTarget, curElement) {
+        // hide counter and auth buttons and show the Login form
         curElement.querySelector('[data-component="counter"]').style.display='none';
         curElement.querySelector('[data-component="auth-buttons"]').style.display='none';
         curElement.querySelector('[data-component="login-form"]').style.display='inline-block';
@@ -90,6 +91,7 @@ export default class CardService extends Component {
     //===================================================================
     // handle click on Register button
     openRegisterForm(curTarget, curElement) {
+        // hide counter and auth buttons and show the Register form
         curElement.querySelector('[data-component="counter"]').style.display='none';
         curElement.querySelector('[data-component="auth-buttons"]').style.display='none';
         curElement.querySelector('[data-component="register-form"]').style.display='inline-block';
@@ -98,6 +100,13 @@ export default class CardService extends Component {
     //===================================================================
     // handle click on Enter button in the Login form
     closeLoginForm(curTarget, curElement) {
+        // ===================================
+        // Process the login data
+
+        //
+        // ===================================
+
+        // hide the Login form and show counter and logout or auth buttons
         curElement.querySelector('[data-component="login-form"]').style.display='none';
         curElement.querySelector('[data-component="counter"]').style.display='inline-block';
         curElement.querySelector('[data-component="auth-buttons"]').style.display='inline-block';
@@ -106,6 +115,13 @@ export default class CardService extends Component {
     //===================================================================
     // handle click on Enter button in the Register form
     closeRegisterForm(curTarget, curElement) {
+        // ===================================
+        // Process the register data
+
+        //
+        // ===================================
+
+        // hide the Login form and show counter and logout or auth buttons
         curElement.querySelector('[data-component="register-form"]').style.display='none';
         curElement.querySelector('[data-component="counter"]').style.display='inline-block';
         curElement.querySelector('[data-component="auth-buttons"]').style.display='inline-block';
