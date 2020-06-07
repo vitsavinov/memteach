@@ -102,6 +102,9 @@ export default class CardService extends Component {
     closeLoginForm(curTarget, curElement) {
         // ===================================
         // Process the login data
+        //
+
+        console.log('Login form was forced');
 
         //
         // ===================================
@@ -117,6 +120,9 @@ export default class CardService extends Component {
     closeRegisterForm(curTarget, curElement) {
         // ===================================
         // Process the register data
+        //
+
+        console.log('Register form was forced');
 
         //
         // ===================================
