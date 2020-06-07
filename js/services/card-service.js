@@ -112,10 +112,12 @@ export default class CardService extends Component {
         // ===================================
         // Process the login data
         //
+        debugger;
 
+        console.log('');
         console.log('Login form was forced');
-        console.log('Name: ', this.logName.innerText);
-        console.log('Password: ', this.logPass.innerText);
+        console.log('Name: ', this.logName.value);
+        console.log('Password: ', this.logPass.value);
 
         //
         // ===================================
@@ -134,11 +136,11 @@ export default class CardService extends Component {
         //
 
         console.log('Register form was forced');
-        console.log('Name: ', this.regName.innerText);
-        console.log('Email: ', this.regEmail.innerText);
-        console.log('Country: ', this.regCountry.innerText);
-        console.log('Password 1: ', this.regPass1.innerText);
-        console.log('Password 2: ', this.regPass2.innerText);
+        console.log('Name: ', this.regName.value);
+        console.log('Email: ', this.regEmail.value);
+        console.log('Country: ', this.regCountry.value);
+        console.log('Password 1: ', this.regPass1.value);
+        console.log('Password 2: ', this.regPass2.value);
 
         //
         // ===================================
