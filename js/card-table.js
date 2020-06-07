@@ -113,14 +113,12 @@ export default class CardTable extends Component {
     _bindAuthButtons() {
         //  bind the click handler to the Login button
         var logBtn = this._element.querySelector("#btnLogin");
-        console.log('logBtn: ' + logBtn);
         this.on(logBtn, 'click', (event) => {
               this._cardservice.openLoginForm(event.currentTarget, this._element);
          });
 
         //  bind the click handler to the Register button
         var regBtn = this._element.querySelector("#btnRegister");
-        console.log('regBtn: ' + regBtn);
         this.on(regBtn, 'click', (event) => {
               this._cardservice.openRegisterForm(event.currentTarget, this._element);
         });

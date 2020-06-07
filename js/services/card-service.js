@@ -24,8 +24,17 @@ export default class CardService extends Component {
         this.startFlag = false;
         this.stopFlag  = false;
 
-        this.stopwatch = document.querySelector('[data-component="counter"]');
-        this.stopwatch.innerText = "Clicks: " + this.clicks.toString();
+        this.clickCounter = document.querySelector('[data-component="counter"]');
+        this.clickCounter.innerText = "Clicks: " + this.clicks.toString();
+
+        this.logName = document.querySelector('[data-component="login-name"]');
+        this.logPass = document.querySelector('[data-component="login-password"]');
+
+        this.regName = document.querySelector('[data-component="register-name"]');
+        this.regEmail = document.querySelector('[data-component="register-email"]');
+        this.regCountry = document.querySelector('[data-component="register-country"]');
+        this.regPass1 = document.querySelector('[data-component="register-password1"]');
+        this.regPass2 = document.querySelector('[data-component="register-password2"]');
     }
 
     //===================================================================
@@ -37,7 +46,7 @@ export default class CardService extends Component {
         if ( curElement.innerHTML !== '<img src="./img/card-empty.jpg">' ) {   					  // check if this cell is empty already
             if ( !this.stopFlag ) {
                 this.clicks++;
-                this.stopwatch.innerText = "Clicks: " + this.clicks.toString();
+                this.clickCounter.innerText = "Clicks: " + this.clicks.toString();
             }
 
             // this cell is not empty - make actions
@@ -105,6 +114,8 @@ export default class CardService extends Component {
         //
 
         console.log('Login form was forced');
+        console.log('Name: ', this.logName.innerText);
+        console.log('Password: ', this.logPass.innerText);
 
         //
         // ===================================
@@ -123,6 +134,11 @@ export default class CardService extends Component {
         //
 
         console.log('Register form was forced');
+        console.log('Name: ', this.regName.innerText);
+        console.log('Email: ', this.regEmail.innerText);
+        console.log('Country: ', this.regCountry.innerText);
+        console.log('Password 1: ', this.regPass1.innerText);
+        console.log('Password 2: ', this.regPass2.innerText);
 
         //
         // ===================================
