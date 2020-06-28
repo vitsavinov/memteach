@@ -112,25 +112,25 @@ export default class CardTable extends Component {
     // bind the click handler to the register and login buttons
     _bindAuthButtons() {
         //  bind the click handler to the Login button
-        var logBtn = this._element.querySelector("#btnLogin");
+        let logBtn = this._element.querySelector("#btnLogin");
         this.on(logBtn, 'click', (event) => {
               this._cardservice.openLoginForm(event.currentTarget, this._element);
          });
 
         //  bind the click handler to the Register button
-        var regBtn = this._element.querySelector("#btnRegister");
+        let regBtn = this._element.querySelector("#btnRegister");
         this.on(regBtn, 'click', (event) => {
               this._cardservice.openRegisterForm(event.currentTarget, this._element);
         });
 
         //  bind the click handler to the Enter button in the Login form
-        var entrLogBtn = this._element.querySelector("#btnEnterLogin");
+        let entrLogBtn = this._element.querySelector("#btnEnterLogin");
         this.on(entrLogBtn, 'click', (event) => {
               this._cardservice.closeLoginForm(event.currentTarget, this._element);
         });
 
         //  bind the click handler to the Enter button in the Register form
-        var entrRegBtn = this._element.querySelector("#btnEnterRegister");
+        let entrRegBtn = this._element.querySelector("#btnEnterRegister");
         this.on(entrRegBtn, 'click', (event) => {
               this._cardservice.closeRegisterForm(event.currentTarget, this._element);
         });

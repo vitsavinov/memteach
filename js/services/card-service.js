@@ -164,6 +164,14 @@ export default class CardService extends Component {
             alert('Repeating password is required');
         }
 
+        let email = this.regEmail.value;
+        let password = this.regPass1.value;
+
+        this.firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+           console.log(error.code);
+           console.log(error.message);
+        });
+
         //
         // ===================================
 
